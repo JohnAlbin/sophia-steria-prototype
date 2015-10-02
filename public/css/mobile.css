@@ -1,85 +1,83 @@
 @charset "utf-8";
 /* CSS Document */
 
-.logo 
-{
-	text-align:left;
-}
-.logo img
-{
-	margin:5px 0px 0px 5px !important;
-	
-}
-.menu_top
-{
-	background:none;
-	height:0px;
-}
-img
-{
-	max-width:280px;
-}
-.banner, .slide
-{
-	height:100px;
-	text-align:center;
-	margin:auto;
-}
-.new_blocs
-{
-	position:static;
-	top:0;
-	margin:0;
-	width:100% !important;
-}
-.new_blocs .bloc, .blocs_finance .focus, .blocs_finance .bourse, .blocs_finance .spec_finance
-{
-	width:100% !important;
-	padding:0;
-	height:150px !important;
-	margin-bottom:10px;
-	border:1px solid #F4F4F4;
-}
-.cycle-slideshow div
-{
-	height:auto !important;
-}
-.languages_switch, .languages_switch ul
-{
-	position:absolute;
-	right:5px;
-	top:3%;
-}
-.left_side,  .page_functions, .social_links,.websites, .search_box,.main_menu,.direct_access, #pager, .left_part
-{
-	display:none !important;
-}
-.banner_page img
-{
-	visibility:hidden;
-}
-.banner_page
-{
-	width:100%;
-	margin-top:20px;
-	height:116px;
-}
-.right_side,.center_div, .footer_links, .menu_top, .header, .blocs_finance
-{
-	width:100% !important
-}
-.new_footer
-{
-	padding:0 !important;
+.logo {
+  text-align: left;
 }
 
-.main_content,.talented
-{
-	min-height:0px !important;
+.logo img {
+  margin: 5px 0px 0px 5px !important;
+
 }
-.copyright
-{
-	text-align:center;
+
+.menu_top {
+  background: none;
+  height: 0px;
+}
+
+img {
+  max-width: 280px;
+}
+
+.banner, .slide {
+  height: 100px;
+  text-align: center;
+  margin: auto;
+}
+
+.new_blocs {
+  position: static;
+  top: 0;
+  margin: 0;
+  width: 100% !important;
+}
+
+.new_blocs .bloc, .blocs_finance .focus, .blocs_finance .bourse, .blocs_finance .spec_finance {
+  width: 100% !important;
+  padding: 0;
+  height: 150px !important;
+  margin-bottom: 10px;
+  border: 1px solid #F4F4F4;
+}
+
+.cycle-slideshow div {
+  height: auto !important;
+}
+
+.languages_switch, .languages_switch ul {
+  position: absolute;
+  right: 5px;
+  top: 3%;
+}
+
+.left_side, .page_functions, .social_links, .websites, .search_box, .main_menu, .direct_access, #pager, .left_part {
+  display: none !important;
+}
+
+.banner_page img {
+  visibility: hidden;
+}
+
+.banner_page {
+  width: 100%;
+  margin-top: 20px;
+  height: 116px;
+}
+
+.right_side, .center_div, .footer_links, .menu_top, .header, .blocs_finance {
+  width: 100% !important
+}
+
+.new_footer {
+  padding: 0 !important;
+}
+
+.main_content, .talented {
+  min-height: 0px !important;
+}
+
+.copyright {
+  text-align: center;
 }
 
 /*.sfNavWrp::before
