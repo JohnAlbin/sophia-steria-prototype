@@ -162,7 +162,7 @@ div.RadTreeView .rtSelected .rtIn:hover
     background-color: transparent;
     color: #000;
 }
-/* Normal treeview — Categories selector as treeview */
+/* Normal treeview Ã³ Categories selector as treeview */
 .sfTreeView .rtIn 
 {    
 	display: -moz-inline-stack;

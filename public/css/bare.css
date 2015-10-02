@@ -71,7 +71,7 @@ pre {
 
 @font-face {
   font-family: icons;
-  src: url("f/icons_cedbbbf70c2feed820a7563f09b6121e.woff") format('woff'), url("f/icons_cedbbbf70c2feed820a7563f09b6121e.ttf") format('truetype'), url("f/icons_cedbbbf70c2feed820a7563f09b6121e.svg#icons_cedbbbf70c2feed820a7563f09b6121e") format('svg');
+  src: url("../fonts/icons_cedbbbf70c2feed820a7563f09b6121e.woff") format('woff'), url("../fonts/icons_cedbbbf70c2feed820a7563f09b6121e.ttf") format('truetype'), url("../fonts/icons_cedbbbf70c2feed820a7563f09b6121e.svg#icons_cedbbbf70c2feed820a7563f09b6121e") format('svg');
   font-weight: normal;
   font-style: normal;
 }
