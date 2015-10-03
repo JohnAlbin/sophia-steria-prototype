@@ -1,0 +1,2583 @@
+<!DOCTYPE html>
+<html class="unscripted">
+<head id="Head1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="version" content="No version"/>
+  <meta name="description"/>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <title>
+    Events
+  </title>
+  <meta name="language" content="en-gb"/>
+  <script type="text/javascript">var _elqQ = _elqQ || [];
+  _elqQ.push(['elqSetSiteId', '1705460725']);
+  _elqQ.push(['elqTrackPageView']);
+
+  (function () {
+    function async_load() {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = '//img03.en25.com/i/elqCfg.min.js';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+
+    if (window.addEventListener) window.addEventListener('DOMContentLoaded', async_load, false);
+    else if (window.attachEvent) window.attachEvent('onload', async_load);
+  })();</script>
+  <meta content="initial-scale=1.0, width=device-width" name="viewport">
+  <script>(function () {
+    var h = document.getElementsByTagName('html')[0];
+    if (h)h.className = h.className.replace(/\bun(?=scripted\b)/, '');
+  })();</script>
+  <!--[if (lt IE 8)|(IEMobile)|(gte IE 9)]><!-->
+  <link rel="stylesheet"
+    href="../../public/css/bare.css">
+  <!-- <![endif]-->
+  <!--[if gte IE 9]><!-->
+  <link rel="stylesheet"
+    href="../../public/css/base.css"
+    media="all and (min-width: 300px)">
+  <link rel="stylesheet"
+    href="../../public/css/standard.css"
+    media="all and (min-width: 768px)">
+  <!-- <![endif]-->
+  <!--[if (IE 8)&(!IEMobile)]>
+  <style>@font-face {
+    font-family: "icons";
+    src: url('../../public/fonts/icons.eot?#iefix');
+  }</style>
+  <link rel='stylesheet'
+    href='../../public/css/standard-ie8.css'/>
+  <![endif]-->
+  <!--[if (gte IE 9)]><!-->
+  <script id="oooLoader"
+    data-main="../../public/js/core.js"
+    src="../../public/js/pre.js"></script>
+  <!-- <![endif]-->
+  <!--[if (gte IE 7)&(lte IE 8)]>
+  <script id="oooLoader"
+    data-main="../../public/js/core-ie.js"
+    src="../../public/js/pre-ie.js"></script>
+  <![endif]-->
+  <!--[if lte IE 9]>
+  <link rel="stylesheet"
+    href="../../public/css/hack-ie8_ie9.css">
+  <![endif]-->
+
+  <link rel="apple-touch-icon"
+    href="../../public/ico/96x96.png">
+  <link rel="icon"
+    href="../../public/ico/64x64.png">
+  <meta name="apple-mobile-web-app-title" content="Sopra Steria">
+  <!--[if IE]>
+  <link rel="shortcut icon"
+    href="../../public/ico/favicon.ico">
+  <![endif]-->
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage"
+    content="/Sitefinity/WebsiteTemplates/App_Themes/Sopra_Steria/ico/144x144.png">
+  <meta name="msapplication-tap-highlight" content="no">
+
+
+  <script type="text/javascript"
+    src="../../public/js/jquery.fancybox.js"></script>
+  <link rel="stylesheet" type="text/css"
+    href="../../public/js/jquery.fancybox.css" media="screen"/>
+  <script
+    src="../../public/js/moment.min.js"></script>
+  <script type="text/javascript"
+    src="../../public/js/jquery.fancybox-media.js"></script>
+  <script type="text/javascript" src="../../public/js/jquery.cookie.js"></script>
+  <script type="text/javascript" src="../../public/js/jquery.rss.js"></script>
+
+  <script>
+    var $ = jQuery.noConflict(true);
+  </script>
+  <meta name="Generator" content="Sitefinity 7.3.5610.0 PU"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script type="text/javascript">
+    (function () {
+      var _rdDeviceWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+      var _rdDeviceHeight = (window.innerHeight > 0) ? window.innerHeight : screen.height;
+      var _rdOrientation = (window.width > window.height) ? 'landscape' : 'portrait';
+    })();
+  </script>
+  <link
+    href="../../public/axd/Telerik.Web.UI.WebResource.axd"
+    type="text/css" rel="stylesheet"/>
+  <link
+    href="../../public/css/layout_transformations.css"
+    type="text/css" rel="stylesheet"/>
+  <link
+    href="../../public/css/Main.css"
+    type="text/css" rel="stylesheet"/>
+  <link
+    href="../../public/css/editor.css"
+    type="text/css" rel="stylesheet"/>
+  <link href="../../public/css/mobile.css" type="text/css" rel="stylesheet"
+    media="only screen and (min-device-pixel-ratio : 1.5)"/>
+  <link href="../../public/css/mobile.css" type="text/css" rel="stylesheet"
+    media="only screen and (max-width: 900px)"/>
+</head>
+<body class="standard">
+<div class="page">
+  <form method="post" action="events" id="form1">
+    <div class="aspNetHidden">
+      <input type="hidden" name="ctl07_TSSM" id="ctl07_TSSM" value=""/>
+      <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value=""/>
+      <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT"
+        value=""/>
+      <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+        value="/wEPDwULLTExOTIyMjg3NjBkGAQFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYFBUBjdGwwMCRwbGFjZWhvbGRlcl8zX3dpZGdldF8wJFRCMDUxMkJBNzAyNyRjdGwwMCRjdGwwMCRCcmVhZGNydW1iBT1jdGwwMCRwbGFjZWhvbGRlcl8zX3dpZGdldF8wJEMwMDUkY3RsMDAkY3RsMDAkdGFiU3RyaXBDb250cm9sBUtjdGwwMCRwbGFjZWhvbGRlcl8zX3dpZGdldF8wJEMwMTAkZXZlbnRzRnJvbnRlbmRMaXN0JGN0bDAwJGN0bDAwJGV2ZW50c0xpc3QFS2N0bDAwJHBsYWNlaG9sZGVyXzNfd2lkZ2V0XzAkQzAxNiRldmVudHNGcm9udGVuZExpc3QkY3RsMDAkY3RsMDAkZXZlbnRzTGlzdAVLY3RsMDAkcGxhY2Vob2xkZXJfM193aWRnZXRfMCRDMDE0JGV2ZW50c0Zyb250ZW5kTGlzdCRjdGwwMCRjdGwwMCRldmVudHNMaXN0BUtjdGwwMCRwbGFjZWhvbGRlcl8zX3dpZGdldF8wJEMwMTQkZXZlbnRzRnJvbnRlbmRMaXN0JGN0bDAwJGN0bDAwJGV2ZW50c0xpc3QPFCsABWQUKwADDwUGXyFEU0lDAgUPBQtfIUl0ZW1Db3VudAIFDwUIXyFQQ291bnRkZBYCHgJfY2ZkZAVLY3RsMDAkcGxhY2Vob2xkZXJfM193aWRnZXRfMCRDMDE2JGV2ZW50c0Zyb250ZW5kTGlzdCRjdGwwMCRjdGwwMCRldmVudHNMaXN0DxQrAAVkFCsAAw8FBl8hRFNJQwIJDwULXyFJdGVtQ291bnQCCQ8FCF8hUENvdW50ZGQWAh8AZmRkBUtjdGwwMCRwbGFjZWhvbGRlcl8zX3dpZGdldF8wJEMwMTAkZXZlbnRzRnJvbnRlbmRMaXN0JGN0bDAwJGN0bDAwJGV2ZW50c0xpc3QPFCsABWQUKwADDwUGXyFEU0lDAiAPBQtfIUl0ZW1Db3VudAIgDwUIXyFQQ291bnRkZBYCHwBmZGQ3D/j7Cyatg2rYFFmwQ36qwOn+2hnO+a6xSiyynlkPNA=="/>
+    </div>
+
+    <script type="text/javascript">
+      //<![CDATA[
+      var theForm = document.forms['form1'];
+      if (!theForm) {
+        theForm = document.form1;
+      }
+      function __doPostBack(eventTarget, eventArgument) {
+        if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+          theForm.__EVENTTARGET.value = eventTarget;
+          theForm.__EVENTARGUMENT.value = eventArgument;
+          theForm.submit();
+        }
+      }
+      //]]>
+    </script>
+
+
+    <script
+      src="../../public/axd/WebResource.axd"
+      type="text/javascript"></script>
+
+
+    <script type="text/javascript">
+      //<![CDATA[
+      var __cultureInfo = {
+        "name": "en",
+        "numberFormat": {
+          "CurrencyDecimalDigits": 2,
+          "CurrencyDecimalSeparator": ".",
+          "IsReadOnly": true,
+          "CurrencyGroupSizes": [3],
+          "NumberGroupSizes": [3],
+          "PercentGroupSizes": [3],
+          "CurrencyGroupSeparator": ",",
+          "CurrencySymbol": "$",
+          "NaNSymbol": "NaN",
+          "CurrencyNegativePattern": 0,
+          "NumberNegativePattern": 1,
+          "PercentPositivePattern": 0,
+          "PercentNegativePattern": 0,
+          "NegativeInfinitySymbol": "-Infinity",
+          "NegativeSign": "-",
+          "NumberDecimalDigits": 2,
+          "NumberDecimalSeparator": ".",
+          "NumberGroupSeparator": ",",
+          "CurrencyPositivePattern": 0,
+          "PositiveInfinitySymbol": "Infinity",
+          "PositiveSign": "+",
+          "PercentDecimalDigits": 2,
+          "PercentDecimalSeparator": ".",
+          "PercentGroupSeparator": ",",
+          "PercentSymbol": "%",
+          "PerMilleSymbol": "‰",
+          "NativeDigits": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"],
+          "DigitSubstitution": 1
+        },
+        "dateTimeFormat": {
+          "AMDesignator": "AM",
+          "Calendar": {
+            "MinSupportedDateTime": "\/Date(-62135596800000)\/",
+            "MaxSupportedDateTime": "\/Date(253402297199999)\/",
+            "AlgorithmType": 1,
+            "CalendarType": 1,
+            "Eras": [1],
+            "TwoDigitYearMax": 2029,
+            "IsReadOnly": true
+          },
+          "DateSeparator": "/",
+          "FirstDayOfWeek": 0,
+          "CalendarWeekRule": 0,
+          "FullDateTimePattern": "dddd, MMMM dd, yyyy h:mm:ss tt",
+          "LongDatePattern": "dddd, MMMM dd, yyyy",
+          "LongTimePattern": "h:mm:ss tt",
+          "MonthDayPattern": "MMMM dd",
+          "PMDesignator": "PM",
+          "RFC1123Pattern": "ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027",
+          "ShortDatePattern": "M/d/yyyy",
+          "ShortTimePattern": "h:mm tt",
+          "SortableDateTimePattern": "yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss",
+          "TimeSeparator": ":",
+          "UniversalSortableDateTimePattern": "yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027",
+          "YearMonthPattern": "MMMM, yyyy",
+          "AbbreviatedDayNames": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+          "ShortestDayNames": ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
+          "DayNames": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "AbbreviatedMonthNames": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", ""],
+          "MonthNames": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December", ""],
+          "IsReadOnly": true,
+          "NativeCalendarName": "Gregorian Calendar",
+          "AbbreviatedMonthGenitiveNames": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", ""],
+          "MonthGenitiveNames": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December", ""]
+        },
+        "eras": [1, "A.D.", null, 0]
+      };//]]>
+    </script>
+
+    <script
+      src="../../public/axd/ScriptResource.axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(1).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(2).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(3).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(4).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(5).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(6).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(7).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(8).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(9).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(10).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(11).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(12).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(13).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(14).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(15).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(16).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(17).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(18).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(19).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(20).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(21).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(22).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(23).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(24).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(25).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(26).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(27).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(28).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(29).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(30).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(31).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(32).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/ScriptResource(33).axd"
+      type="text/javascript"></script>
+    <script
+      src="../../public/axd/WebResource(1).axd"
+      type="text/javascript"></script>
+    <div class="aspNetHidden">
+
+      <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR"
+        value="12CB0B31"/>
+      <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+        value="/wEWAgLtya+MAQLnx9LhCVz8O8aXL32VNDWeXBmjSOrlcpA63ZLBLcCknME4nDjW"/>
+    </div>
+    <script type="text/javascript">
+      //<![CDATA[
+      Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', [], [], [], 90, 'ctl00');
+      //]]>
+    </script>
+
+
+    <div id="PublicWrapper"
+      class="float-center  font-size-medium line-height-normal emptywrapper width100">
+      <div id="placeholder_3" class="sf_cols placeholder_3">
+        <div style="float: left; width: 100%; margin: 0; " class="sf_colsOut">
+          <div class="sf_colsIn">
+
+            <script type="text/javascript">$(document).ready(function () {
+              $("#ctl00_placeholder_3_widget_0_C005_ctl00_ctl00_tabStripControl").removeClass().addClass("filter");
+            });</script>
+            <script type="text/javascript">$(document).ready(function () {
+              $(".content.main, .aside").removeAttr("style");
+            });</script>
+            <script type="text/javascript">$(document).ready(function () {
+
+
+              var callback = function (t) {
+                window.location.href = "/search?indexCatalogue=everything-soprasteria-uk&searchQuery=" + t + "&wordsMode=0";
+              };
+
+              $(document).on("click", "#searchBoxSubmit", function () {
+                callback($("#searchBox").val());
+              });
+
+              $(document).on("keyup", "#searchBox", function (e) {
+                if (e.keyCode == 13) {
+                  callback($(this).val());
+                }
+
+              });
+
+            });</script>
+            <script type="text/javascript"
+              src="../../public/js/Main.js"></script>
+            <script type="text/javascript"> $(document).ready(function () {
+              $(".nav-main ._l1").click(function () {
+                if ($(this).next("div").children("div").find(".lvl2").length <= 0) {
+                  $(this).next("div.sub").css("display", "none");
+                  window.location.href = $(this).attr("href");
+                }
+
+              });
+
+            });</script>
+            <div class="sf_cols">
+              <div class="sf_colsOut page_OLD">
+                <div id="placeholder_3_widget_0_TB0512BA7002_Col00"
+                  class="sf_colsIn sf_1col_1in_100">
+                  <ul class="jumpers">
+                    <li><a href="#content">Go to content</a></li>
+                    <li><a href="#navigation">Go to navigation</a></li>
+                  </ul>
+                  <div class="sf_cols">
+                    <div class="sf_colsOut header main-header"
+                      data-placeholder-label="Header" role="banner">
+                      <div id="placeholder_3_widget_0_TB0512BA7004_Col00"
+                        class="sf_colsIn sf_1col_1in_100">
+                        <div class="sf_cols">
+                          <div class="sf_colsOut container" style="width: 100%;"
+                            data-placeholder-label="Header Container">
+                            <div id="placeholder_3_widget_0_TB0512BA7005_Col00"
+                              class="sf_colsIn sf_1col_1in_100">
+                              <div class="headerTools"><span
+                                class="navSwitch"></span>
+
+  <span class="searchBox">
+  <fieldset>
+    <label for="searchBox"><span class="__wai">Search</span><input
+      id="searchBox" name="searchBox" type="search" value=""
+      placeholder="Search"/></label>
+    <button id="searchBoxSubmit" name="searchBoxSubmit" type="button"
+      value="OK"><span><span>OK</span></span></button>
+  </fieldset></span>
+
+                                <div class="share">
+                                  <button type="button"><span><span>Share</span></span>
+                                  </button>
+                                  <ul class="_socialMedia">
+                                    <li><a href="/" target="_blank"
+                                      title="Share on Twitter"
+                                      class="_twitter"><img
+                                      src="../../public/images/twitter.jpg"
+                                      alt="twitter" displaymode="Original"
+                                      title="twitter"></a></li>
+                                    <li><a
+                                      href="http://www.facebook.com/sharer.php?u=http://www.soprasteria.co.uk/en" target="_blank"
+                                      title="Share on Facebook"
+                                      class="_facebook"><img
+                                      src="../../public/images/facebookfb815794e93c64d785faff0000851219.jpg"
+                                      alt="Facebook"></a></li>
+                                    <li><a
+                                      href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.soprasteria.co.uk/en&title=Sopra%20Steria,%20a%20European%20leader%20in%20digital%20transformation&summary=&source=" target="_blank"
+                                      title="Share on LinkedIn"
+                                      class="_linkedin"><img
+                                      src="../../public/images/linkedin00825794e93c64d785faff0000851219.jpg"
+                                      alt="LinkedIn"></a></li>
+                                    <li><a href="https://plus.google.com/share?url=http://www.soprasteria.co.uk/en" target="_blank"
+                                      title="Share on Google +"
+                                      class="_google_plus"><img
+                                      src="../../public/images/google-plus.png"
+                                      alt="Google+"></a></li>
+                                  </ul>
+
+                                </div>
+                              </div>
+                              <div class="logoWrap">
+                                <div class="logo">
+                                  <a href="/" tabindex="1"><strong>Sopra
+                                    Steria</strong></a>
+                                </div>
+                                <div class="baseline">Delivering Transformation.
+                                  Together.
+                                </div>
+                              </div>
+                              <div id="placeholder_3_widget_0_TB0512BA7027"
+                                class="breadcrumbs">
+                                <span
+                                  id="placeholder_3_widget_0_TB0512BA7027_ctl00_ctl00_BreadcrumbLabel"
+                                  style="display:none;"></span>
+
+                                <div
+                                  id="ctl00_placeholder_3_widget_0_TB0512BA7027_ctl00_ctl00_Breadcrumb"
+                                  class="RadSiteMap RadSiteMap_Default">
+                                  <!-- 2014.3.1209.40 -->
+                                  <ul class="rsmFlow rsmLevel rsmOneLevel">
+                                    <li class="rsmItem sfBreadcrumbNavigation">
+                                      <a class="rsmLink" href="../../home.html"
+                                        title="A European leader in digital transformation, Sopra Steria provides one of the most comprehensive portfolios of end to end service offerings in the market.">Home</a><span
+                                      class='sfBreadcrumbNodeSeparator'></span>
+                                    </li>
+                                    <li class="rsmItem sfBreadcrumbNavigation">
+                                      <a class="rsmLink" href="../newsroom"
+                                        title="Client stories, news items, press releases ">Newsroom</a><span
+                                      class='sfBreadcrumbNodeSeparator'></span>
+                                    </li>
+                                    <li
+                                      class="rsmItem sfNoBreadcrumbNavigation">
+                                      <a class="rsmLink"
+                                        href="javascript: void(0)">Events</a>
+                                    </li>
+                                  </ul>
+                                  <input
+                                    id="ctl00_placeholder_3_widget_0_TB0512BA7027_ctl00_ctl00_Breadcrumb_ClientState"
+                                    name="ctl00_placeholder_3_widget_0_TB0512BA7027_ctl00_ctl00_Breadcrumb_ClientState"
+                                    type="hidden"/>
+                                </div>
+
+                              </div>
+
+
+                              <div class="sibblingLevels">
+
+
+                                <ul>
+                                  <li>
+                                    <a href="/newsroom/news">News</a>
+                                  </li>
+                                  <li>
+                                    <a href="/newsroom/press-releases">Press
+                                      releases</a>
+                                  </li>
+                                  <li>
+                                    <a href="/newsroom/publications">Publications</a>
+                                  </li>
+                                  <li>
+                                    <a href="/newsroom/success-stories">Success
+                                      stories</a>
+                                  </li>
+                                  <li>
+                                    <a href="/newsroom/events" class="sfSel">Events</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sf_cols">
+                    <div class="sf_colsOut nav navigation"
+                      data-placeholder-label="Navigation" role="navigation">
+                      <div id="placeholder_3_widget_0_TB0512BA7009_Col00"
+                        class="sf_colsIn sf_1col_1in_100">
+                        <div class="sfContentBlock">
+                          <div class="countrySwitch">
+                            <button><span>United Kingdom</span></button>
+                            <ul>
+                              <li><img alt=""
+                                src="../../public/images/close_country.png"
+                                class="close_country"/></li>
+                              <li><a href="http://www.soprasteria.at"
+                                target="_blank">Austria</a></li>
+                              <li><a href="http://www.soprasteria.be"
+                                target="_blank">Belgium</a></li>
+                              <li><a href="http://www.soprasteria.com/en"
+                                target="_blank">Corporate</a></li>
+                              <li><a href="http://www.soprasteria.dk"
+                                target="_blank">Denmark</a></li>
+                              <li><a href="http://www.soprasteria.com/fr"
+                                target="_blank">France</a></li>
+                              <li><a href="http://www.soprasteria.de"
+                                target="_blank">Germany</a></li>
+                              <li><a href="http://www.soprasteria.it"
+                                target="_blank">Italy</a></li>
+                              <li><a href="http://www.soprasteria.lu"
+                                target="_blank">Luxembourg</a></li>
+                              <li><a href="http://www.soprasteria.no"
+                                target="_blank">Norway</a></li>
+                              <li><a href="http://www.soprasteria.sg"
+                                target="_blank" style="line-height: 1.4;">Singapore</a>
+                              </li>
+                              <li><a href="http://www.sopra.in" target="_blank">Sopra
+                                India</a></li>
+                              <li><a href="http://www.steria.in"
+                                target="_blank">Steria India</a></li>
+                              <li><a href="http://www.sopra.es" target="_blank">Spain</a>
+                              </li>
+                              <li><a href="http://www.soprasteria.se"
+                                target="_blank">Sweden</a></li>
+                              <li><a href="http://www.soprasteria.ch"
+                                target="_blank">Switzerland</a></li>
+                              <li>
+                                <hr/>
+                              </li>
+                              <li><a
+                                href="http://www.soprasteriarecruitment.co.uk/"
+                                target="_blank">Sopra Steria Recruitment</a>
+                              </li>
+                              <li><a href="http://www.soprabanking.com"
+                                target="_blank">Sopra Banking Software</a>
+                              </li>
+                              <li><a href="http://www.soprahr.com"
+                                target="_blank">Sopra HR Software</a></li>
+                              <li><a href="http://www.soprasteria.com"
+                                target="_blank">Sopra Steria</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="navSwitch"></span>
+
+                        <div class="nav-main">
+                          <ul>
+                            <li>
+                              <div class="_head"><a href="about-us" class="_l1">About
+                                us</a></div>
+                              <div data-label="About us" class="sub _w">
+                                <div class="cols _x3">
+                                  <div class="col">
+                                    <ul
+                                      id="placeholder_3_widget_0_TB0512BA7012_ctl00_ctl00_ctl01_ctl00_childNodesContainer">
+                                      <li class="lvl2">
+                                        <a href="about-us/csr" class="_l2">Corporate
+                                          social responsibility</a>
+
+                                        <ul
+                                          id="placeholder_3_widget_0_TB0512BA7012_ctl00_ctl00_ctl01_ctl00_ctl01_childNodesContainer">
+                                          <li>
+                                            <a href="about-us/csr/csr-in-india">CSR
+                                              in India</a>
+                                          </li>
+                                          <li>
+                                            <a href="about-us/csr/workplace">Workplace</a>
+                                          </li>
+                                          <li>
+                                            <a href="about-us/csr/communities">Communities</a>
+                                          </li>
+                                          <li>
+                                            <a href="about-us/csr/environment">Environment</a>
+                                          </li>
+                                        </ul>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="about-us/global-delivery"
+                                          class="_l2">Global delivery</a>
+                                        <ul
+                                          id="placeholder_3_widget_0_TB0512BA7012_ctl00_ctl00_ctl01_ctl00_ctl02_childNodesContainer">
+                                          <li>
+                                            <a
+                                              href="about-us/global-delivery/offshore-delivery">Offshore
+                                              delivery</a>
+                                          </li>
+                                        </ul>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="about-us/locations"
+                                          class="_l2">Locations</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="about-us/partners" class="_l2">Partners</a>
+                                        <ul
+                                          id="placeholder_3_widget_0_TB0512BA7012_ctl00_ctl00_ctl01_ctl00_ctl04_childNodesContainer">
+                                          <li>
+                                            <a
+                                              href="about-us/partners/framework-partnerships">Accreditations
+                                              and frameworks</a>
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="about-us/partners/technology-partners">Technology
+                                              partners</a>
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="about-us/partners/market-partners">Market
+                                              partners</a>
+                                          </li>
+                                        </ul>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a
+                                          href="about-us/working-with-suppliers"
+                                          class="_l2">Working with suppliers</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a
+                                          href="http://www.investors.soprasteria.com"
+                                          class="_l2"
+target="_blank">Investors</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="_head"><a href="markets" class="_l1">Markets</a>
+                              </div>
+                              <div data-label="Markets" class="sub _w">
+                                <div class="cols _x3">
+                                  <div class="col">
+                                    <ul
+                                      id="placeholder_3_widget_0_TB0512BA7012_ctl00_ctl00_ctl01_ctl01_childNodesContainer">
+                                      <li class="lvl2">
+                                        <a href="markets/aerospace" class="_l2">Aerospace</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="markets/agriculture"
+                                          class="_l2">Agriculture</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="markets/central-government"
+                                          class="_l2">Central government</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="markets/criminal-justice"
+                                          class="_l2">Criminal justice</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="markets/defence" class="_l2">Defence</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="markets/energy-utilities"
+                                          class="_l2">Energy and utilities</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="markets/facilities-management"
+                                          class="_l2">Facilities management</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="markets/financial-services"
+                                          class="_l2">Financial services</a>
+                                        <ul
+                                          id="placeholder_3_widget_0_TB0512BA7012_ctl00_ctl00_ctl01_ctl01_ctl08_childNodesContainer">
+                                          <li>
+                                            <a
+                                              href="markets/financial-services/asset-management">Asset
+                                              management</a>
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="markets/financial-services/banking">Banking</a>
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="markets/financial-services/insurance">Insurance</a>
+                                          </li>
+                                        </ul>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="markets/healthcare"
+                                          class="_l2">Healthcare</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="markets/joint-ventures"
+                                          class="_l2">Joint ventures</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="markets/local-government"
+                                          class="_l2">Local government</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="markets/police" class="_l2">Police</a>
+                                        <ul
+                                          id="placeholder_3_widget_0_TB0512BA7012_ctl00_ctl00_ctl01_ctl01_ctl12_childNodesContainer">
+                                          <li>
+                                            <a
+                                              href="markets/police/command-control">Command
+                                              and control</a>
+                                          </li>
+                                        </ul>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="markets/retail" class="_l2">Retail</a>
+                                        <ul
+                                          id="placeholder_3_widget_0_TB0512BA7012_ctl00_ctl00_ctl01_ctl01_ctl13_childNodesContainer">
+                                          <li>
+                                            <a
+                                              href="markets/retail/the-retail-alliance">The
+                                              Retail Alliance</a>
+                                          </li>
+                                        </ul>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="markets/telco-media"
+                                          class="_l2">Telco and media</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="markets/travel-transport"
+                                          class="_l2">Travel and Transport</a>
+                                        <ul
+                                          id="placeholder_3_widget_0_TB0512BA7012_ctl00_ctl00_ctl01_ctl01_ctl15_childNodesContainer">
+                                          <li>
+                                            <a
+                                              href="markets/travel-transport/air-travel">Air
+                                              Travel</a>
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="markets/travel-transport/postal-logistics">Postal
+                                              &amp; Logistics</a>
+                                          </li>
+                                        </ul>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="_head"><a href="solutions"
+                                class="_l1">Solutions</a>
+                              </div>
+                              <div data-label="Solutions" class="sub _w">
+                                <div class="cols _x3">
+                                  <div class="col">
+                                    <ul
+                                      id="placeholder_3_widget_0_TB0512BA7012_ctl00_ctl00_ctl01_ctl02_childNodesContainer">
+                                      <li class="lvl2">
+                                        <a
+                                          href="solutions/application-management"
+                                          class="_l2">Application management</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a
+                                          href="solutions/business-process-services"
+                                          class="_l2">Business process
+                                          services</a>
+                                        <ul
+                                          id="placeholder_3_widget_0_TB0512BA7012_ctl00_ctl00_ctl01_ctl02_ctl02_childNodesContainer">
+                                          <li>
+                                            <a
+                                              href="solutions/business-process-services/shared-services">Shared
+                                              Services</a>
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="solutions/business-process-services/bps-consultancy">BPS
+                                              consultancy</a>
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="solutions/business-process-services/finance-and-accounting">Finance
+                                              and accounting</a>
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="solutions/business-process-services/human-resources">Human
+                                              resources</a>
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="solutions/business-process-services/procurement">Procurement</a>
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="solutions/business-process-services/customer-service">Customer
+                                              service</a>
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="solutions/business-process-services/solutions-for-industry">Solutions
+                                              for industry</a>
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="solutions/business-process-services/solutions-for-public-sector">Solutions
+                                              for public sector</a>
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="solutions/business-process-services/lean-process-automation">Lean
+                                              Process Automation</a>
+                                          </li>
+                                        </ul>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="solutions/consulting"
+                                          class="_l2">Consulting</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="solutions/digital" class="_l2">Digital</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a
+                                          href="solutions/infrastructure-management"
+                                          class="_l2">Infrastructure
+                                          management</a>
+                                        <ul
+                                          id="placeholder_3_widget_0_TB0512BA7012_ctl00_ctl00_ctl01_ctl02_ctl05_childNodesContainer">
+                                          <li>
+                                            <a
+                                              href="solutions/infrastructure-management/mobility">Mobility</a>
+                                          </li>
+                                        </ul>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="solutions/stie" class="_l2">Scientific,
+                                          technical, industrial and on-board
+                                          engineering </a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a
+                                          href="solutions/geographic-information-systems"
+                                          class="_l2">Spatially enabled
+                                          services</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="solutions/systems-integration"
+                                          class="_l2">Systems integration</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="solutions/testing" class="_l2">Testing</a>
+                                        <ul
+                                          id="placeholder_3_widget_0_TB0512BA7012_ctl00_ctl00_ctl01_ctl02_ctl09_childNodesContainer">
+                                          <li>
+                                            <a
+                                              href="solutions/testing/testing-training">Testing
+                                              training</a>
+                                          </li>
+                                        </ul>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="_head"><a href="offerings"
+                                class="_l1">Offerings</a>
+                              </div>
+                              <div data-label="Offerings" class="sub _w">
+                                <div class="cols _x3">
+                                  <div class="col">
+                                    <ul
+                                      id="placeholder_3_widget_0_TB0512BA7012_ctl00_ctl00_ctl01_ctl03_childNodesContainer">
+                                      <li class="lvl2">
+                                        <a href="offerings/big-data"
+                                          class="_l2">Big data</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="offerings/biometrics"
+                                          class="_l2">Biometrics</a>
+                                        <ul
+                                          id="placeholder_3_widget_0_TB0512BA7012_ctl00_ctl00_ctl01_ctl03_ctl02_childNodesContainer">
+                                          <li>
+                                            <a
+                                              href="offerings/biometrics/fingerprint-identification">Fingerprint
+                                              identification</a>
+                                          </li>
+                                        </ul>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a
+                                          href="offerings/business-intelligence"
+                                          class="_l2">Business intelligence</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="offerings/cloud" class="_l2">Cloud </a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="offerings/customer-centricity"
+                                          class="_l2">Customer centricity </a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a
+                                          href="offerings/finance-transformation"
+                                          class="_l2">Finance transformation</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="offerings/gcloud" class="_l2">G-Cloud </a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a
+                                          href="offerings/lean-process-automation"
+                                          class="_l2">Lean Process
+                                          Automation</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="offerings/midata" class="_l2">midata</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="offerings/open-source"
+                                          class="_l2">Open source</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="offerings/recruitment"
+                                          class="_l2">Recruitment </a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="offerings/security-services"
+                                          class="_l2">Security services</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="offerings/sustainability"
+                                          class="_l2">Sustainability </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="_head"><a href="careers" class="_l1">Careers</a>
+                              </div>
+                              <div data-label="Careers" class="sub _w">
+                                <div class="cols _x3">
+                                  <div class="col">
+                                    <ul
+                                      id="placeholder_3_widget_0_TB0512BA7012_ctl00_ctl00_ctl01_ctl04_childNodesContainer">
+                                      <li class="lvl2">
+                                        <a
+                                          href="careers/working-at-sopra-steria"
+                                          class="_l2">Working at Sopra
+                                          Steria</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="careers/graduate-recruitment"
+                                          class="_l2">Graduate programme</a>
+                                        <ul
+                                          id="placeholder_3_widget_0_TB0512BA7012_ctl00_ctl00_ctl01_ctl04_ctl02_childNodesContainer">
+                                          <li>
+                                            <a
+                                              href="careers/graduate-recruitment/graduate-fairs-autumn-2015">Graduate
+                                              fairs Autumn 2015</a>
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="careers/graduate-recruitment/technical-graduate-stream">Technical
+                                              graduate stream</a>
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="careers/graduate-recruitment/finance-and-accounting">Finance
+                                              and accounting</a>
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="careers/graduate-recruitment/project-management">Project
+                                              management</a>
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="careers/graduate-recruitment/bid-management">Bid
+                                              management</a>
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="careers/graduate-recruitment/business-analysis">Business
+                                              analysis</a>
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="careers/graduate-recruitment/user-experience">User
+                                              experience</a>
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="careers/graduate-recruitment/graphical-information-systems">Graphical
+                                              information systems</a>
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="careers/graduate-recruitment/graduate-recruitment-selection-process">Graduate
+                                              recruitment selection process</a>
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="careers/graduate-recruitment/profiles-of-previous-graduates">Profiles
+                                              of previous Graduates</a>
+                                          </li>
+                                        </ul>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="_head"><a href="newsroom" class="_l1">Newsroom</a>
+                              </div>
+                              <div data-label="Newsroom" class="sub _w">
+                                <div class="cols _x3">
+                                  <div class="col">
+                                    <ul
+                                      id="placeholder_3_widget_0_TB0512BA7012_ctl00_ctl00_ctl01_ctl05_childNodesContainer">
+                                      <li class="lvl2">
+                                        <a href="newsroom/news"
+                                          class="_l2">News</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="newsroom/press-releases"
+                                          class="_l2">Press releases</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="newsroom/publications"
+                                          class="_l2">Publications</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="newsroom/success-stories"
+                                          class="_l2">Success stories</a>
+                                      </li>
+                                      <li class="lvl2">
+                                        <a href="newsroom/events" class="_l2">Events</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="_head"><a
+                                href="http://blog.soprasteria.co.uk"
+                                class="_l1">Blog</a></div>
+                              <div data-label="Blog" class="sub _w">
+                                <div class="cols _x3">
+                                  <div class="col"></div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="sfContentBlock">
+                          <ul class="nav-extras">
+                            <li class="nav-contact"><strong><span>Contact</span></strong>
+                              <ul class="_socios">
+                                <li><a href="/contact-us" title="Contact"
+                                  class="_contact"><span>Contact</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nav-social">
+                              <strong><span>Follow us</span></strong>
+                              <ul class="_socialMedia">
+                                <li><a
+                                  href="http://www.twitter.com/soprasteria_UK"
+                                  target="_blank"
+                                  title="Follow us on Twitter"><span
+                                  class="sfImageWrapper"><img
+                                  src="../../public/images/twitter.png"
+                                  displaymode="Original" alt="twitter"
+                                  title="twitter"/></span></a></li>
+                                <li><a
+                                  href="https://www.facebook.com/soprasteria"
+                                  target="_blank" title="Follow us on Facebook"><span
+                                  class="sfImageWrapper"><img
+                                  src="../../public/images/facebookfb815794e93c64d785faff0000851219.jpg"
+                                  displaymode="Original" alt="facebook"
+                                  title="facebook"/></span></a></li>
+                                <li><a
+                                  href="https://www.linkedin.com/company/soprasteria"
+                                  target="_blank" title="Follow us on LinkedIn"><span
+                                  class="sfImageWrapper"><img
+                                  src="../../public/images/linkedin00825794e93c64d785faff0000851219.jpg"
+                                  displaymode="Original" alt="linkedin"
+                                  title="linkedin"/></span></a></li>
+                                <li><a href="feeds/soprasteria-uk-all-news-en"
+                                  title="RSS"><span class="sfImageWrapper"><img
+                                  src="../../public/images/rss09825794e93c64d785faff0000851219.jpg"
+                                  displaymode="Original" alt="rss" title="rss"/></span></a>
+                                </li>
+                                <li><a href="http://blog.soprasteria.co.uk"
+                                  target="_blank"><img
+                                  src="../../public/images/blogicon.png"
+                                  title="blog" alt="blog"/></a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sf_cols">
+                    <div class="sf_colsOut main-content" style="width: 100%;"
+                      data-placeholder-label="Content" role="main">
+                      <div id="placeholder_3_widget_0_TB0512BA7017_Col00"
+                        class="sf_colsIn sf_1col_1in_100">
+                        <div class="sf_cols">
+                          <div class="sf_colsOut section"
+                            data-placeholder-label="Section">
+                            <div id="placeholder_3_widget_0_TAF45F718001_Col00"
+                              class="sf_colsIn sf_1col_1in_100">
+                              <div class="sf_cols">
+                                <div class="sf_colsOut container"
+                                  data-placeholder-label="Section Container">
+                                  <div
+                                    id="placeholder_3_widget_0_TAF45F718003_Col00"
+                                    class="sf_colsIn sf_1col_1in_100">
+                                    <div
+                                      class='brick _red _width_x3 _height_mini _right'>
+                                      <h1>Events</h1>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sf_cols">
+                          <div class="sf_colsOut section"
+                            data-placeholder-label="Section">
+                            <div id="placeholder_3_widget_0_TAF45F718005_Col00"
+                              class="sf_colsIn sf_1col_1in_100">
+                              <div class="sf_cols">
+                                <div class="sf_colsOut content _edgy"
+                                  data-placeholder-label="Content Edgy">
+                                  <div
+                                    id="placeholder_3_widget_0_TAF45F718013_Col00"
+                                    class="sf_colsIn sf_1col_1in_100">
+                                    <div
+                                      class="tabStrip tabStripContainer horizontal">
+                                      <div class="sf_cols tabConfigurator">
+                                        <div
+                                          class="sf_colsOut sf_1cols_1_100 tabStripOuter"
+                                          data-placeholder-label="Drop in the tabstrip widget">
+                                          <div
+                                            id="placeholder_3_widget_0_C002_Col00"
+                                            class="sf_colsIn sf_1cols_1in_100 tabStripInner tabStripInner"><span
+                                            id="placeholder_3_widget_0_C005"
+                                            class="listBar">
+<div id="ctl00_placeholder_3_widget_0_C005_ctl00_ctl00_tabStripControl"
+  class="RadTabStrip RadTabStrip_Metro RadTabStripTop_Metro RadTabStripTop"
+  data-animations="true">
+  <div class="rtsLevel rtsLevel1">
+    <ul class="rtsUL">
+      <li class="rtsLI rtsFirst"><a class="rtsLink rtsSelected" href="#"><span
+        class="rtsOut"><span class="rtsIn"><span
+        class="rtsTxt">2015</span></span></span></a></li>
+      <li class="rtsLI"><a class="rtsLink rtsAfter" href="#"><span
+        class="rtsOut"><span class="rtsIn"><span
+        class="rtsTxt">2014</span></span></span></a></li>
+      <li class="rtsLI rtsLast"><a class="rtsLink" href="#"><span
+        class="rtsOut"><span class="rtsIn"><span
+        class="rtsTxt">2013</span></span></span></a></li>
+    </ul>
+  </div>
+  <input
+    id="ctl00_placeholder_3_widget_0_C005_ctl00_ctl00_tabStripControl_ClientState"
+    name="ctl00_placeholder_3_widget_0_C005_ctl00_ctl00_tabStripControl_ClientState"
+    type="hidden"/>
+</div>
+<input type="hidden"
+  name="ctl00$placeholder_3_widget_0$C005$ctl00$ctl00$tabIndexState"
+  id="placeholder_3_widget_0_C005_ctl00_ctl00_tabIndexState"/></span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="tabDesignContainer"
+                                        data-loaded="false">
+                                        <div
+                                          class="sf_cols tab tabContainer tabRoot">
+                                          <div
+                                            class="sf_colsOut sf_1cols_1_100 tabChildOuter"
+                                            data-placeholder-label="Each layout control in here represents a tab">
+                                            <div
+                                              id="placeholder_3_widget_0_C002_Col01"
+                                              class="sf_colsIn sf_1cols_1in_100 multiPageInner tabChildInner">
+                                              <div class="sf_cols">
+                                                <div
+                                                  class="sf_colsOut sf_1col_1_100">
+                                                  <div
+                                                    id="placeholder_3_widget_0_C004_Col00"
+                                                    class="sf_colsIn sf_1col_1in_100">
+                                                    <div class="table _docs">
+                                                      <table>
+                                                        <caption>Events
+                                                        </caption>
+                                                        <tbody>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/12/05/default-calendar/sopra-steria-sponsors-british-police-symphony-orchestra-annual-concert">Sopra
+                                                              Steria sponsors
+                                                              British Police
+                                                              Symphony Orchestra
+                                                              annual concert</a>
+                                                            </h2>
+              
+              <span class="_date">
+                
+                 05-12-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/11/03/default-calendar/sopra-steria-sponsors-harrow&#39;s-heroes">Sopra
+                                                              Steria sponsors
+                                                              "Harrow's
+                                                              Heroes"</a></h2>
+              
+              <span class="_date">
+                
+                 03-11-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/11/03/default-calendar/sopra-steria&#39;s-jack-springman-leads-discussion-at-qlik-customer-experience-breakfast-briefings">Sopra
+                                                              Steria's Jack
+                                                              Springman leads
+                                                              discussion at Qlik
+                                                              Customer
+                                                              Experience
+                                                              Breakfast
+                                                              Briefings</a></h2>
+              
+              <span class="_date">
+                
+                 03-11-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/10/27/default-calendar/sir-clive-woodward-hosts-sopra-steria-s-leadership-forum">Sir
+                                                              Clive Woodward
+                                                              hosts Sopra
+                                                              Steria’s
+                                                              leadership
+                                                              forum</a></h2>
+              
+              <span class="_date">
+                
+                 27-10-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/10/27/default-calendar/sopra-steria&#39;s-jack-springman-leads-discussion-at-qlik-customer-experience-breakfast-briefings">Sopra
+                                                              Steria's Jack
+                                                              Springman leads
+                                                              discussion at Qlik
+                                                              Customer
+                                                              Experience
+                                                              Breakfast
+                                                              Briefings</a></h2>
+              
+              <span class="_date">
+                
+                 27-10-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/10/08/default-calendar/sopra-steria-sponsoring-cityforum">Sopra
+                                                              Steria sponsoring
+                                                              Cityforum from
+                                                              data to knowledge
+                                                              - innovation for
+                                                              policing and
+                                                              criminal
+                                                              justice </a></h2>
+              
+              <span class="_date">
+                
+                 08-10-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/10/07/default-calendar/lean-agile-scotland">Sopra
+                                                              Steria sponsors at
+                                                              Lean Agile
+                                                              Scotland</a></h2>
+              
+              <span class="_date">
+                
+                 07-10-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/10/05/default-calendar/sopra-steria-exhibiting-at-the-intelligent-transport-systems-world-congress-in-bordeaux">Sopra
+                                                              Steria exhibiting
+                                                              at the Intelligent
+                                                              Transport Systems
+                                                              World Congress in
+                                                              Bordeaux</a></h2>
+              
+              <span class="_date">
+                
+                 05-10-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/10/01/default-calendar/sopra-steria-supports-digital-leaders-scotland">Sopra
+                                                              Steria supports
+                                                              Digital Leaders
+                                                              Scotland</a></h2>
+              
+              <span class="_date">
+                
+                 01-10-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/09/25/default-calendar/sopra-steria-judging-at-the-uk-customer-experience-awards-2015">Sopra
+                                                              Steria judging at
+                                                              the UK Customer
+                                                              Experience Awards
+                                                              2015</a></h2>
+              
+              <span class="_date">
+                
+                 25-09-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/09/17/default-calendar/young-software-engineer-of-the-year-at-scotsoft15">Sopra
+                                                              Steria to sponsor
+                                                              Young Software
+                                                              Engineer of the
+                                                              Year at
+                                                              ScotSoft2015</a>
+                                                            </h2>
+              
+              <span class="_date">
+                
+                 17-09-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/09/11/default-calendar/sopra-steria-supports-digital-leaders-northern-ireland">Sopra
+                                                              Steria supports
+                                                              Digital Leaders
+                                                              Northern
+                                                              Ireland</a></h2>
+              
+              <span class="_date">
+                
+                 11-09-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/09/07/default-calendar/sopra-steria-exhibiting-at-police-superintendents-annual-conference">Sopra
+                                                              Steria exhibiting
+                                                              at Police
+                                                              Superintendents’
+                                                              Annual
+                                                              Conference</a>
+                                                            </h2>
+              
+              <span class="_date">
+                
+                 07-09-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/09/03/default-calendar/sopra-steria-supports-digital-leaders-scotland">Sopra
+                                                              Steria supports
+                                                              Digital Leaders
+                                                              Scotland</a></h2>
+              
+              <span class="_date">
+                
+                 03-09-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/06/30/default-calendar/sopra-steria-is-a-silver-sponsor-at-20-20-customer-experience-summit">Sopra
+                                                              Steria is a silver
+                                                              sponsor at 20:20
+                                                              Customer
+                                                              Experience
+                                                              Summit</a></h2>
+              
+              <span class="_date">
+                
+                 30-06-2015                               
+                
+			to  02-07-2015                    
+                                            
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/06/25/default-calendar/sopra-steria&#39;s-ceo-to-speak-at-national-digital-conference-15-leading-a-digital-nation">Sopra
+                                                              Steria's CEO to
+                                                              speak at National
+                                                              Digital Conference
+                                                              15 – Leading a
+                                                              Digital Nation</a>
+                                                            </h2>
+              
+              <span class="_date">
+                
+                 25-06-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/06/24/default-calendar/sopra-steria-exhibiting-at-modernising-justice-through-technology-2015">Sopra
+                                                              Steria exhibiting
+                                                              at Modernising
+                                                              Justice through
+                                                              Technology
+                                                              2015</a></h2>
+              
+              <span class="_date">
+                
+                 24-06-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/06/12/default-calendar/sopra-steria-supports-digital-leaders-northern-ireland">Sopra
+                                                              Steria supports
+                                                              Digital Leaders
+                                                              Northern
+                                                              Ireland</a></h2>
+              
+              <span class="_date">
+                
+                 12-06-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/06/11/default-calendar/sopra-steria-supports-digital-leaders-scotland">Sopra
+                                                              Steria supports
+                                                              Digital Leaders
+                                                              Scotland</a></h2>
+              
+              <span class="_date">
+                
+                 11-06-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/05/21/default-calendar/sopra-steria-exhibiting-at-solace-scotland">Sopra
+                                                              Steria exhibiting
+                                                              at Solace
+                                                              Scotland</a></h2>
+              
+              <span class="_date">
+                
+                 21-05-2015                               
+                
+			to  22-05-2015                    
+                                            
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/05/14/default-calendar/sopra-steria-sponsors-data-for-erm-solvency-ii-2015">Sopra
+                                                              Steria sponsors
+                                                              ‘Data for ERM &
+                                                              Solvency II
+                                                              2015’</a></h2>
+              
+              <span class="_date">
+                
+                 14-05-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/05/13/default-calendar/alastair-campbell-hosts-sopra-steria-s-leadership-forum">Alastair
+                                                              Campbell hosts
+                                                              Sopra Steria’s
+                                                              leadership
+                                                              forum</a></h2>
+              
+              <span class="_date">
+                
+                 13-05-2015                               
+                
+			to  13-05-2015                    
+                                            
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/03/31/default-calendar/sopra-steria-showcasing-the-latest-developments-in-smartcontact-at-british-apco">Sopra
+                                                              Steria showcasing
+                                                              the latest
+                                                              developments in
+                                                              SmartContact at
+                                                              British APCO</a>
+                                                            </h2>
+              
+              <span class="_date">
+                
+                 31-03-2015                               
+                
+			to  01-04-2015                    
+                                            
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/03/28/default-calendar/sopra-steria-supports-earth-hour-initiative">Sopra
+                                                              Steria supports
+                                                              Earth Hour
+                                                              initiative</a>
+                                                            </h2>
+              
+              <span class="_date">
+                
+                 28-03-2015                               
+                
+			to  28-03-2015                    
+                                            
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/03/27/default-calendar/are-you-making-most-of-your-it-for-your-business-in-the-digital-world">Are
+                                                              you making most of
+                                                              your IT for your
+                                                              business in the
+                                                              digital world?</a>
+                                                            </h2>
+              
+              <span class="_date">
+                
+                 27-03-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/03/27/default-calendar/digital-leaders-northern-ireland-kicks-off-in-2015-with-the-topic-open-data">Digital
+                                                              Leaders Northern
+                                                              Ireland kicks off
+                                                              in 2015 with the
+                                                              topic Open
+                                                              Data</a></h2>
+              
+              <span class="_date">
+                
+                 27-03-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/03/18/default-calendar/sopra-steria-to-speak-at-the-future-of-integrated-offender-management-forum-2015">Sopra
+                                                              Steria to speak at
+                                                              the Future of
+                                                              Integrated
+                                                              Offender
+                                                              Management forum
+                                                              2015</a></h2>
+              
+              <span class="_date">
+                
+                 18-03-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/03/04/default-calendar/sopra-steria-sponsors-nics-live-in-belfast">Sopra
+                                                              Steria sponsors
+                                                              NICS Live in
+                                                              Belfast</a></h2>
+              
+              <span class="_date">
+                
+                 04-03-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/03/03/default-calendar/sopra-steria-is-a-sponsor-at-eworld-purchasing-and-supply-forum">Sopra
+                                                              Steria is a
+                                                              sponsor at eWorld
+                                                              Purchasing and
+                                                              Supply forum</a>
+                                                            </h2>
+              
+              <span class="_date">
+                
+                 03-03-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/02/25/default-calendar/sopra-steria-key-sponsors-at-open-source-awards-2015">Sopra
+                                                              Steria key
+                                                              sponsors at Open
+                                                              Source Awards
+                                                              2015</a></h2>
+              
+              <span class="_date">
+                
+                 25-02-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/01/22/default-calendar/sopra-steria-is-proud-to-be-headline-sponsor-of-utility-week-energy-customer-conference">Sopra
+                                                              Steria headline
+                                                              sponsors at
+                                                              Utility Week
+                                                              Energy Customer
+                                                              Conference</a>
+                                                            </h2>
+              
+              <span class="_date">
+                
+                 22-01-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2015/01/21/default-calendar/utility-week-water-customer-conference-2015">Sopra
+                                                              Steria headline
+                                                              sponsors at
+                                                              Utility Week Water
+                                                              Customer
+                                                              Conference</a>
+                                                            </h2>
+              
+              <span class="_date">
+                
+                 21-01-2015                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        </tbody>
+                                                      </table>
+                                                    </div>
+                                                    <input
+                                                      id="ctl00_placeholder_3_widget_0_C010_eventsFrontendList_ctl00_ctl00_eventsList_ClientState"
+                                                      name="ctl00_placeholder_3_widget_0_C010_eventsFrontendList_ctl00_ctl00_eventsList_ClientState"
+                                                      type="hidden"/><span
+                                                    id="ctl00_placeholder_3_widget_0_C010_eventsFrontendList_ctl00_ctl00_eventsList"
+                                                    style="display:none;"></span>
+                                                    <span></span>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="sf_cols">
+                                                <div
+                                                  class="sf_colsOut sf_1col_1_100">
+                                                  <div
+                                                    id="placeholder_3_widget_0_C013_Col00"
+                                                    class="sf_colsIn sf_1col_1in_100">
+                                                    <div class="table _docs">
+                                                      <table>
+                                                        <caption>Events
+                                                        </caption>
+                                                        <tbody>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2014/12/06/default-calendar/sopra-steria-sponsors-police-concert">Sopra
+                                                              Steria sponsors
+                                                              British Police
+                                                              Symphony Orchestra
+                                                              concert </a></h2>
+              
+              <span class="_date">
+                
+                 06-12-2014                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2014/11/24/default-calendar/sopra-steria-confirmed-to-speak-at-eurostar-2014">Sopra
+                                                              Steria confirmed
+                                                              to speak at
+                                                              EuroSTAR 2014</a>
+                                                            </h2>
+              
+              <span class="_date">
+                
+                 24-11-2014                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2014/11/10/default-calendar/sopra-steria-speaking-at-the-itsmf-uk-conference-and-exhibition">Sopra
+                                                              Steria speaking at
+                                                              the ITSMF UK
+                                                              Conference and
+                                                              Exhibition</a>
+                                                            </h2>
+              
+              <span class="_date">
+                
+                 10-11-2014                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2014/11/04/default-calendar/andrew-marr-hosts-sopra-steria-s-leadership-forum">Andrew
+                                                              Marr hosts Sopra
+                                                              Steria’s
+                                                              leadership
+                                                              forum</a></h2>
+              
+              <span class="_date">
+                
+                 04-11-2014                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2014/09/25/default-calendar/sopra-steria-judging-at-the-uk-customer-experience-awards-2014">Sopra
+                                                              Steria judging at
+                                                              the UK Customer
+                                                              Experience Awards
+                                                              2014</a></h2>
+              
+              <span class="_date">
+                
+                 25-09-2014                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2014/09/09/default-calendar/sopra-steria-a-silver-sponsor-at-nordic-g-summit-2014">Sopra
+                                                              Steria a silver
+                                                              sponsor at Nordic
+                                                              G-Summit 2014</a>
+                                                            </h2>
+              
+              <span class="_date">
+                
+                 09-09-2014                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2014/07/01/default-calendar/sopra-steria-to-speak-at-20-20-customer-experience-summit">Sopra
+                                                              Steria to speak at
+                                                              20:20 Customer
+                                                              Experience
+                                                              Summit</a></h2>
+              
+              <span class="_date">
+                
+                 01-07-2014                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2014/06/10/default-calendar/sopra-steria-a-silver-sponsor-at-g-force-2014">Sopra
+                                                              Steria a silver
+                                                              sponsor at G-Force
+                                                              2014</a></h2>
+              
+              <span class="_date">
+                
+                 10-06-2014                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2014/04/30/default-calendar/james-may-hosts-sopra-steria-s-leadership-forum">James
+                                                              May hosts Sopra
+                                                              Steria’s
+                                                              leadership
+                                                              forum</a></h2>
+              
+              <span class="_date">
+                
+                 30-04-2014                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        </tbody>
+                                                      </table>
+                                                    </div>
+                                                    <input
+                                                      id="ctl00_placeholder_3_widget_0_C016_eventsFrontendList_ctl00_ctl00_eventsList_ClientState"
+                                                      name="ctl00_placeholder_3_widget_0_C016_eventsFrontendList_ctl00_ctl00_eventsList_ClientState"
+                                                      type="hidden"/><span
+                                                    id="ctl00_placeholder_3_widget_0_C016_eventsFrontendList_ctl00_ctl00_eventsList"
+                                                    style="display:none;"></span>
+                                                    <span></span>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="sf_cols">
+                                                <div
+                                                  class="sf_colsOut sf_1col_1_100">
+                                                  <div
+                                                    id="placeholder_3_widget_0_C012_Col00"
+                                                    class="sf_colsIn sf_1col_1in_100">
+                                                    <div class="table _docs">
+                                                      <table>
+                                                        <caption>Events
+                                                        </caption>
+                                                        <tbody>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2013/11/04/default-calendar/sopra-steria-speaking-at-eurostar-2013">Sopra
+                                                              Steria speaking at
+                                                              EuroSTAR 2013</a>
+                                                            </h2>
+              
+              <span class="_date">
+                
+                 04-11-2013                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2013/10/22/default-calendar/sopra-steria-exhibiting-at-procurex-scotland-live-2013">Sopra
+                                                              Steria exhibiting
+                                                              at Procurex
+                                                              Scotland live
+                                                              2013</a></h2>
+              
+              <span class="_date">
+                
+                 22-10-2013                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2013/10/22/default-calendar/sopra-steria-speaking-at-ucaat-conference-2013">Sopra
+                                                              Steria speaking at
+                                                              UCAAT conference
+                                                              2013</a></h2>
+              
+              <span class="_date">
+                
+                 22-10-2013                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2013/09/19/default-calendar/professor-brian-cox-hosts-sopra-steria-s-leadership-forum">Professor
+                                                              Brian Cox hosts
+                                                              Sopra Steria’s
+                                                              leadership
+                                                              forum</a></h2>
+              
+              <span class="_date">
+                
+                 19-09-2013                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td
+                                                            class="_briefcase">
+                                                            &nbsp;</td>
+                                                          <td
+                                                            data-label="&nbsp;"
+                                                            class="_details">
+                                                            <h2 class="_h3"><a
+                                                              class="_arrowed"
+                                                              href="event/2013/02/13/default-calendar/sopra-steria-sponsoring-the-nimbus-ninety-converge-event-at-the-science-museum">Sopra
+                                                              Steria sponsoring
+                                                              the Nimbus Ninety
+                                                              Converge event at
+                                                              the Science
+                                                              Museum</a></h2>
+              
+              <span class="_date">
+                
+                 13-02-2013                               
+                       	
+                     
+                                              
+              </span>
+                                                          </td>
+                                                        </tr>
+                                                        </tbody>
+                                                      </table>
+                                                    </div>
+                                                    <input
+                                                      id="ctl00_placeholder_3_widget_0_C014_eventsFrontendList_ctl00_ctl00_eventsList_ClientState"
+                                                      name="ctl00_placeholder_3_widget_0_C014_eventsFrontendList_ctl00_ctl00_eventsList_ClientState"
+                                                      type="hidden"/><span
+                                                    id="ctl00_placeholder_3_widget_0_C014_eventsFrontendList_ctl00_ctl00_eventsList"
+                                                    style="display:none;"></span>
+                                                    <span></span>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sf_cols">
+                    <div class="sf_colsOut footer">
+                      <div id="placeholder_3_widget_0_TB0512BA7020_Col00"
+                        class="sf_colsIn sf_1col_1in_100">
+                        <div class="sf_cols">
+                          <div class="sf_colsOut container" style="width: 100%;"
+                            data-placeholder-label="Footer Container">
+                            <div id="placeholder_3_widget_0_TB0512BA7021_Col00"
+                              class="sf_colsIn sf_1col_1in_100">
+                              <div class="footerBar">
+                                <div class="toTop"><a href="#">Top of page</a>
+                                </div>
+                              </div>
+                              <div class="signed">
+                                <ul>
+                                  <li>
+                                    <a href="/footer/sitemap">Sitemap</a>
+                                  </li>
+                                  <li>
+                                    <a href="footer/terms-of-use">Terms of
+                                      use</a>
+                                  </li>
+                                  <li>
+                                    <a href="footer/privacy-policy">Privacy
+                                      policy</a>
+                                  </li>
+                                </ul>
+                                <div id="baseline" class="baseline_translation">
+                                  * Réussir la transformation. Ensemble.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      //<![CDATA[
+      var sf_appPath = '/';
+      ;
+      (function () {
+        function loadHandler() {
+          var hf = $get('ctl07_TSSM');
+          if (!hf._RSSM_init) {
+            hf._RSSM_init = true;
+            hf.value = '';
+          }
+          hf.value += ';Telerik.Sitefinity.Resources, Version=7.3.5610.0, Culture=neutral, PublicKeyToken=b28c218413bdf563:en:066c438b-fd7d-43be-a3dc-07ea4bf1ce7d:83fa35c7;RandomSiteControls, Version=7.3.5610.0, Culture=neutral, PublicKeyToken=null:en:82e7cad0-4a5c-40bb-88c1-d9ac4f63c61a:baa01c90:aebe7bd7;Telerik.Sitefinity.Resources, Version=7.3.5610.0, Culture=neutral, PublicKeyToken=b28c218413bdf563:en:066c438b-fd7d-43be-a3dc-07ea4bf1ce7d:7a90d6a;Telerik.Web.UI, Version=2014.3.1209.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4:en:583085b5-d2ab-4213-8c8d-72e418962ce3:580b2269:eb8d8a8e:8cee9284;Telerik.Web.UI.Skins, Version=2014.3.1209.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4:en:a03c93a2-44f1-4ddf-b6e5-c3006f6806ab:61563e20';
+          Sys.Application.remove_load(loadHandler);
+        };
+        Sys.Application.add_load(loadHandler);
+      })();
+      Sys.Application.add_init(function () {
+        $create(Telerik.Web.UI.RadSiteMap, null, null, null, $get("ctl00_placeholder_3_widget_0_TB0512BA7027_ctl00_ctl00_Breadcrumb"));
+      });
+      Sys.Application.add_init(function () {
+        $create(Telerik.Web.UI.RadTabStrip, {
+          "_selectedIndex": 0,
+          "_skin": "Metro",
+          "attributes": {"data-animations": "true"},
+          "clientStateFieldID": "ctl00_placeholder_3_widget_0_C005_ctl00_ctl00_tabStripControl_ClientState",
+          "selectedIndexes": ["0"],
+          "tabData": [{}, {}, {}]
+        }, {
+          "load": onSSTabStripLoad,
+          "tabSelected": onSSTabSelected,
+          "tabSelecting": onSSTabSelecting
+        }, null, $get("ctl00_placeholder_3_widget_0_C005_ctl00_ctl00_tabStripControl"));
+      });
+      Sys.Application.add_init(function () {
+        $create(Telerik.Web.UI.RadListView, {
+          "UniqueID": "ctl00$placeholder_3_widget_0$C010$eventsFrontendList$ctl00$ctl00$eventsList",
+          "_clientSettings": {
+            "DataBinding": {
+              "ItemPlaceHolderID": "ctl00_placeholder_3_widget_0_C010_eventsFrontendList_ctl00_ctl00_eventsList_ItemsContainer",
+              "DataService": {}
+            }
+          },
+          "_virtualItemCount": 32,
+          "clientStateFieldID": "ctl00_placeholder_3_widget_0_C010_eventsFrontendList_ctl00_ctl00_eventsList_ClientState",
+          "renderMode": 1
+        }, null, null, $get("ctl00_placeholder_3_widget_0_C010_eventsFrontendList_ctl00_ctl00_eventsList"));
+      });
+      Sys.Application.add_init(function () {
+        $create(Telerik.Sitefinity.Web.UI.UserPreferences, {
+          "_timeOffset": "0",
+          "_userBrowserSettingsForCalculatingDates": true,
+          "timeZoneDisplayName": "UTC",
+          "timeZoneId": "UTC"
+        }, null, null);
+      });
+      Sys.Application.add_init(function () {
+        $create(Telerik.Web.UI.RadListView, {
+          "UniqueID": "ctl00$placeholder_3_widget_0$C016$eventsFrontendList$ctl00$ctl00$eventsList",
+          "_clientSettings": {
+            "DataBinding": {
+              "ItemPlaceHolderID": "ctl00_placeholder_3_widget_0_C016_eventsFrontendList_ctl00_ctl00_eventsList_ItemsContainer",
+              "DataService": {}
+            }
+          },
+          "_virtualItemCount": 9,
+          "clientStateFieldID": "ctl00_placeholder_3_widget_0_C016_eventsFrontendList_ctl00_ctl00_eventsList_ClientState",
+          "renderMode": 1
+        }, null, null, $get("ctl00_placeholder_3_widget_0_C016_eventsFrontendList_ctl00_ctl00_eventsList"));
+      });
+      Sys.Application.add_init(function () {
+        $create(Telerik.Web.UI.RadListView, {
+          "UniqueID": "ctl00$placeholder_3_widget_0$C014$eventsFrontendList$ctl00$ctl00$eventsList",
+          "_clientSettings": {
+            "DataBinding": {
+              "ItemPlaceHolderID": "ctl00_placeholder_3_widget_0_C014_eventsFrontendList_ctl00_ctl00_eventsList_ItemsContainer",
+              "DataService": {}
+            }
+          },
+          "_virtualItemCount": 5,
+          "clientStateFieldID": "ctl00_placeholder_3_widget_0_C014_eventsFrontendList_ctl00_ctl00_eventsList_ClientState",
+          "renderMode": 1
+        }, null, null, $get("ctl00_placeholder_3_widget_0_C014_eventsFrontendList_ctl00_ctl00_eventsList"));
+      });
+      //]]>
+    </script>
+  </form>
+</div>
+</body>
+</html>
