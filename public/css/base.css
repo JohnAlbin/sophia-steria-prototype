@@ -961,9 +961,11 @@ div.larger {
   display: none;
 }
 
-input.placeholder {
-  font-style: italic;
-  color: #f8f9fa;
+input.placeholder,
+input::-webkit-input-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder {
+  color: #999;
 }
 
 input.inputting {
