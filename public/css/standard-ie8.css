@@ -1068,6 +1068,7 @@ h1._extended {
 }
 
 h2,
+.h2,
 legend {
   font-size: 16.5px;
   line-height: 1.454545454545455;
@@ -1112,6 +1113,7 @@ h6 {
 
 h1 a,
 h2 a,
+.h2 a,
 h3 a,
 h4 a,
 h5 a,

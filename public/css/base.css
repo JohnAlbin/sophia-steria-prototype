@@ -147,6 +147,7 @@ h1 strong,
 .page textarea,
 .page select,
 h2,
+.h2,
 legend,
 h3,
 h4,
@@ -783,6 +784,7 @@ h1._extended {
 }
 
 h2,
+.h2,
 legend {
   font-size: 16.5px;
   font-size: 1.03125rem;
@@ -834,6 +836,7 @@ h6 {
 
 h1 a,
 h2 a,
+.h2 a,
 h3 a,
 h4 a,
 h5 a,
@@ -2476,6 +2479,7 @@ button.btn:hover span,
 }
 
 .brick h2,
+.brick .h2,
 .brick h3,
 .brick h4 {
   margin-bottom: 0.35em;
