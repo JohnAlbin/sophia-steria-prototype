@@ -1,0 +1,27 @@
+.nav-main ._w3 li.lvl2, .nav-main ._w li.lvl2 {
+  float: left;
+  width: 33.33% !important;
+  margin-top: 10px !important;
+}
+
+.nav-main ._w2 li.lvl2 {
+  float: left;
+  width: 50% !important;
+  margin-top: 10px !important;
+}
+
+.nav-main ._w1 li.lvl2 {
+  float: left;
+  width: 100% !important;
+  margin-top: 10px !important;
+}
+
+.col {
+  width: 100% !important;
+}
+
+@media screen and (max-width: 47.9375em) {
+  .col ul li {
+    display: block;
+  }
+}

@@ -1,0 +1,245 @@
+/* Tree View */
+div.RadTreeView .rtLI {
+  padding-bottom: 0;
+}
+
+div.RadTreeView .rtIn {
+  border: 0;
+  font-family: Arial, Verdana, Sans-serif !important;
+}
+
+div.RadTreeView .rtUL .rtLI .rtUL {
+  padding-left: 16px;
+}
+
+div.RadTreeView .rtTop,
+div.RadTreeView .rtMid,
+div.RadTreeView .rtBot {
+  padding: 0 0 0 16px;
+}
+
+div.RadTreeView .rtPlus,
+div.RadTreeView .rtMinus {
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+
+  margin-left: -13px;
+  margin-right: 2px;
+  background-color: transparent;
+  position: static;
+  background-image: url(<% = WebResource("Telerik.Sitefinity.Resources.Themes.Default.Images.sfArrows.gif")% >);
+}
+
+div.RadTreeView .rtPlus {
+  background-position: 0 -1400px;
+}
+
+div.RadTreeView .rtMinus {
+  background-position: 0 -1300px;
+}
+
+div.RadTreeView .rtIn,
+div.RadTreeView .rtHover .rtIn,
+div.RadTreeView .rtSelected .rtIn {
+  padding: 4px 3px 3px;
+  border: 0;
+}
+
+div.RadTreeView .rtIn,
+div.RadTreeView .rtHover .rtIn {
+  color: #000;
+}
+
+div.RadTreeView .rtSelected .rtIn {
+  color: #fff;
+}
+
+div.RadTreeView .rtLI .rtDisabled span.rtIn,
+div.RadTreeView .rtLI .rtDisabled .rtHover span.rtIn,
+div.RadTreeView .rtLI .rtIn.sfDisabled,
+div.RadTreeView .rtLI .rtHover .rtIn.sfDisabled,
+div.sfTreeTable .sfFirstTreeTableColumn .sfDisabled.sfItemTitle strong {
+  color: #666;
+}
+
+div.RadTreeView .rtDisabled .rtIn .rfeFileExtension {
+  opacity: 0.6 !important;
+  filter: alpha(opacity=60) !important;
+}
+
+div.RadTreeView .rtHover .rtIn {
+  text-decoration: none !important;
+  background-image: none;
+  background-color: transparent;
+}
+
+div.RadTreeView .rtSelected .rtIn {
+  background-image: none;
+}
+
+div.RadTreeView .rtSelected .rtIn:hover {
+  background-color: #828282;
+}
+
+/* kendo treeview */
+.sfModuleSettingsWrp .k-treeview .k-item,
+.sfContentTypeRefs .k-treeview .k-item {
+  padding-left: 0;
+}
+
+.sfModuleSettingsWrp .k-treeview span.k-in, .sfModuleSettingsWrp .k-treeview .k-state-hover, .sfModuleSettingsWrp .k-treeview .k-state-selected,
+.sfContentTypeRefs .k-treeview span.k-in, .sfContentTypeRefs .k-treeview .k-state-hover, .sfContentTypeRefs .k-treeview .k-state-selected {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  background-image: none;
+  background-color: transparent;
+}
+
+.sfModuleSettingsWrp .k-treeview .k-item ul.k-group,
+.sfContentTypeRefs .k-treeview .k-item ul.k-group {
+  margin-left: 15px;
+}
+
+/* Module content types */
+.sfModuleSettingsWrp .k-treeview span.k-in, .sfModuleSettingsWrp .k-treeview .k-state-hover, .sfModuleSettingsWrp .k-treeview .k-state-selected {
+  margin-bottom: 15px;
+}
+
+.sfModuleSettingsWrp .k-treeview .k-item ul.k-group {
+  margin-left: 50px;
+}
+
+/* Kendo treeview in selector dialog*/
+/* Kendo File Explorer */
+.sfSelectorDialog .k-treeview.sfCheckListBox .k-top, .sfSelectorDialog .k-treeview.sfCheckListBox .k-mid, .sfSelectorDialog .k-treeview.sfCheckListBox .k-bot {
+  margin-bottom: 7px;
+}
+
+.sfSelectorDialog .k-treeview .k-plus, .sfSelectorDialog .k-treeview .k-minus, .sfSelectorDialog .k-treeview .k-plus-disabled, .sfSelectorDialog .k-treeview .k-minus-disabled {
+  margin-top: 2px;
+}
+
+.sfSelectorDialog .k-treeview.sfCheckListBox .k-plus, .sfSelectorDialog .k-treeview.sfCheckListBox .k-minus, .sfSelectorDialog .k-treeview.sfCheckListBox .k-plus-disabled, .sfSelectorDialog .k-treeview.sfCheckListBox .k-minus-disabled {
+  margin-top: -3px;
+}
+
+.sfSelectorDialog .k-treeview .k-plus, .sfSelectorDialog .k-treeview .k-minus {
+  background: transparent url(<% = WebResource("Telerik.Sitefinity.Resources.Themes.Default.Images.sfArrows.gif")% >) no-repeat - 1000 px - 1000 px;
+}
+
+.sfSelectorDialog .k-treeview .k-plus {
+  background-position: 3px -896px;
+}
+
+.sfSelectorDialog .k-treeview .k-minus {
+  background-position: 3px -795px;
+}
+
+.sfSelectorDialog .k-treeview .k-in, .sfSelectorDialog .k-treeview .k-state-hover, .sfSelectorDialog .k-treeview .k-state-selected {
+  margin: 0;
+  padding: 3px 5px;
+  border: 0;
+  border-radius: 0;
+  background-image: none;
+}
+
+.sfSelectorDialog .k-treeview.sfCheckListBox .k-in, .sfSelectorDialog .k-treeview.sfCheckListBox .k-state-hover, .sfSelectorDialog .k-treeview.sfCheckListBox .k-state-selected {
+  padding: 0;
+}
+
+.sfSelectorDialog .k-treeview .k-state-selected {
+  background-color: #105cb6;
+  color: #fff;
+  box-shadow: none;
+}
+
+.sfSelectorDialog .k-treeview.sfCheckListBox .k-state-selected {
+  background-color: transparent;
+  color: #000;
+}
+
+/* Normal treeview ó Categories selector as treeview */
+.sfTreeView .rtIn {
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+div.RadTreeView.sfTreeView .rtLI .rtSelected span.rtIn {
+  background-image: none;
+  background-color: transparent;
+  color: #000;
+}
+
+div.RadTreeView.sfTreeView.sfTreeViewSingle .rtLI .rtSelected span.rtIn {
+  background-color: #105cb6;
+  background-image: none;
+  color: #fff;
+}
+
+/* Site Sync tree table */
+.sfSyncSiteWrp div.RadTreeView {
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.sfSyncSiteWrp div.RadTreeView .rtLI {
+  border-top: 1px solid #e4e4e4;
+}
+
+.sfSyncSiteWrp div.RadTreeView .rtTop, .sfSyncSiteWrp div.RadTreeView .rtMid, .sfSyncSiteWrp div.RadTreeView .rtBot {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.sfSyncSiteWrp div.RadTreeView .rtIn, .sfSyncSiteWrp div.RadTreeView .rtSelected .rtIn, .sfSyncSiteWrp div.RadTreeView .rtLI .rtHover .rtIn {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.sfSyncSiteWrp div.RadTreeView .rtIn .RadComboBox {
+  position: absolute;
+  right: 230px;
+  top: 5px;
+}
+
+.sfSyncSiteWrp div.RadTreeView .rtIn .sfChange {
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+.sfSyncSiteWrp div.RadTreeView .rtIn .sfSyncItemsCountLabel {
+  position: absolute;
+  right: 70px;
+  font-weight: normal;
+  padding-right: 25px;
+}
+
+.sfSyncSiteWrp div.RadTreeView .rtIn .sfSyncItemsCountLabel i {
+  color: #666;
+  font-style: normal;
+}
+
+.sfSyncSiteWrp div.RadTreeView .rtIn .sfSyncPageAndTemplatesLabel {
+  position: relative;
+  left: 10px;
+  font-weight: normal;
+}
+
+.sfSyncSiteWrp div.RadTreeView .rtIn .sfSyncPageAndTemplatesLabel i {
+  color: #666;
+  font-style: normal;
+}
+
+.sfSyncSiteWrp .RadTreeView .sfCultureLbl {
+  position: absolute;
+  font-size: 11px;
+  margin-left: 10px;
+  display: inline-block;
+}

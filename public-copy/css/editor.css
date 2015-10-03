@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+.center {
+  margin: auto !important;
+}
+
+.logoimg {
+  display: block;
+  float: right;
+  margin: 0 0 2em 1em;
+}
+
+._chart1 tr {
+  background-color: #d3d1d1;
+}
+
+._chart1 tr:nth-child(odd) {
+  background-color: #e5e5e5;
+}
