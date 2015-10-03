@@ -50,7 +50,8 @@
     line-height: 0.947368421052632;
   }
 
-  h3 {
+  h3
+  .h3 {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.625;
@@ -61,7 +62,8 @@
     font-size: 0.9375rem;
   }
 
-  h4 {
+  h4
+  .h4 {
     font-size: 15px;
     font-size: 0.9375rem;
   }

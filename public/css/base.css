@@ -152,6 +152,7 @@ legend,
 h3,
 .h3,
 h4,
+.h4,
 .baseline,
 .langSwitch,
 .langSwitch strong,
@@ -815,7 +816,8 @@ h3._mini {
   font-size: 0.875rem;
 }
 
-h4 {
+h4,
+.h4 {
   font-size: 14px;
   font-size: 0.875rem;
   margin-bottom: 0;
@@ -840,7 +842,9 @@ h1 a,
 h2 a,
 .h2 a,
 h3 a,
+.h3 a,
 h4 a,
+.h4 a,
 h5 a,
 h6 a {
   text-decoration: none;
@@ -2496,7 +2500,8 @@ button.btn:hover span,
 .brick .h2,
 .brick h3,
 .brick .h3,
-.brick h4 {
+.brick h4,
+.brick .h4 {
   margin-bottom: 0.35em;
 }
 
@@ -2735,6 +2740,10 @@ button.btn:hover span,
 .brick._gray .cap,
 .brick._gray .linksList {
   color: #cd0c31;
+}
+
+.brick._gray h2.h4 {
+  color: #000;
 }
 
 .brick._gray2 {
