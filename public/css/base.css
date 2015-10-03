@@ -1412,6 +1412,17 @@ form._newsletter input {
   margin: 0;
 }
 
+.line-swap {
+  position: relative;
+  padding-top: 20px;
+}
+.line-swap__top {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
 .baseline {
   color: #191c1c;
   font-size: 13px;
