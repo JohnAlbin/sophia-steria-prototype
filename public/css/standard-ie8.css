@@ -316,10 +316,6 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-input:focus {
-  outline: none;
-}
-
 .main {
   margin-bottom: 0.857142857142857em;
 }

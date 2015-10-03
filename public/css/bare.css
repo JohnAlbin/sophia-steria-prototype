@@ -110,7 +110,6 @@ a {
 
 a:hover {
   color: #43738b;
-  outline: none;
   text-decoration: underline;
   -webkit-transition: color 100ms ease-in;
   -moz-transition: color 100ms ease-in;
