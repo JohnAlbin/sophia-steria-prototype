@@ -476,7 +476,8 @@
     width: 1px;
   }
 
-  .brick h3 {
+  .brick h3,
+  .brick .h3 {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.368421052631579;

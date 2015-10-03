@@ -150,6 +150,7 @@ h2,
 .h2,
 legend,
 h3,
+.h3,
 h4,
 .baseline,
 .langSwitch,
@@ -266,7 +267,8 @@ h4 strong,
 .kicker,
 .larger,
 .content h3,
-.brick h3 {
+.brick h3,
+.brick .h3 {
   font-family: Soho Gothic W01;
   font-style: normal;
   font-weight: 500;
@@ -2477,7 +2479,8 @@ button.btn:hover span,
   margin-top: 1em;
 }
 
-.brick h3 {
+.brick h3,
+.brick .h3 {
   font-size: 22px;
   font-size: 1.375rem;
   line-height: 1.466666666666667;
@@ -2492,6 +2495,7 @@ button.btn:hover span,
 .brick h2,
 .brick .h2,
 .brick h3,
+.brick .h3,
 .brick h4 {
   margin-bottom: 0.35em;
 }
@@ -2723,6 +2727,7 @@ button.btn:hover span,
 .brick._gray h1,
 .brick._gray h2,
 .brick._gray h3,
+.brick._gray .h3,
 .brick._gray .cap,
 .brick._gray .linksList {
   color: #cd0c31;
