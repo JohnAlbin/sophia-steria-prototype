@@ -2571,6 +2571,10 @@ button.btn:hover span,
   min-height: 4em;
   padding-left: 4em;
   position: relative;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-size: 1em;
 }
 
 .brick .twitter-meta:before {
