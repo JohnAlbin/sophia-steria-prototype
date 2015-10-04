@@ -1952,10 +1952,6 @@ button.btn:hover span,
   text-decoration: none;
 }
 
-.play span {
-  display: none;
-}
-
 .btns {
   font-size: 17px;
   font-size: 1.0625rem;
