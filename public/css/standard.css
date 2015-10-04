@@ -1586,10 +1586,6 @@
     position: relative;
   }
 
-  .countrySwitch a {
-    color: #fff;
-  }
-
   .countrySwitch button {
     padding-left: 19px;
     position: relative;
