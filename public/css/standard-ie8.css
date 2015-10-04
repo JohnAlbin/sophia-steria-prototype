@@ -933,13 +933,6 @@ input[type=radio] {
   margin: 0;
 }
 
-._wai,
-.jumpers,
-.searchBox button > span span,
-.share button > span span {
-  display: none;
-}
-
 html {
   height: 100%;
 }

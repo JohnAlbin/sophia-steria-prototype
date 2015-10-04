@@ -642,13 +642,6 @@ input[type=radio] {
   margin: 0;
 }
 
-._wai,
-.jumpers,
-.searchBox button > span span,
-.share button > span span {
-  display: none;
-}
-
 html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -1504,10 +1497,6 @@ form._newsletter input {
   background: #f8f9fa;
 }
 
-.nav .toggler span {
-  display: none;
-}
-
 .nav .toggler:before {
   content: '+';
 }
@@ -1578,10 +1567,6 @@ form._newsletter input {
 
 .sub .closer {
   cursor: pointer;
-}
-
-.sub .closer span {
-  display: none;
 }
 
 .sub button.closer {
@@ -3540,13 +3525,6 @@ td._blank {
 ._socios span,
 ._socialMedia span {
   text-decoration: none;
-}
-
-._socios a span,
-  /*._socialMedia a span,*/
-._socios span span,
-._socialMedia span span {
-  display: none;
 }
 
 ._socios a:before,

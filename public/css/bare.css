@@ -538,7 +538,16 @@ td.cellmiddle {
  * manner should be kept concise, to avoid unnecessary burden on the user.
  * "!important" is used to prevent unintentional overrides.
  */
-.visually-hidden {
+.visually-hidden,
+.nav .toggler span,
+._wai,
+.jumpers,
+.searchBox button > span span,
+.share button > span span,
+.sub .closer span,
+._socios a span,
+._socios span span,
+._socialMedia span span {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
   overflow: hidden;
