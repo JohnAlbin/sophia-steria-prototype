@@ -2735,8 +2735,8 @@ button.btn:hover span,
 }
 
 .brick._orange {
-  background-color: #ef7d00;
-  color: #fff;
+  background-color: #efc900;
+  color: #000;
 }
 
 .brick._orange h1,
@@ -2744,7 +2744,7 @@ button.btn:hover span,
 .brick._orange h3,
 .brick._orange .cap,
 .brick._orange .linksList {
-  color: #fff;
+  color: #000;
 }
 
 .brick._red {
