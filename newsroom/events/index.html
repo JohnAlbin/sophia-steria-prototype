@@ -422,9 +422,9 @@
   </fieldset></span>
 
                                 <div class="share">
-                                  <button type="button"><span><span>Share</span></span>
+                                  <button type="button" aria-controls="social-links"><span><span>Share</span></span>
                                   </button>
-                                  <ul class="_socialMedia">
+                                  <ul class="_socialMedia" id="social-links">
                                     <li><a href="/" target="_blank"
                                       class="_twitter"><img
                                       src="../../public/images/twitter.jpg"
@@ -478,7 +478,7 @@
                                     <li
                                       class="rsmItem sfNoBreadcrumbNavigation">
                                       <a class="rsmLink"
-                                        href="javascript: void(0)">Events</a>
+                                        href="javascript: void(0)" role="button" aria-controls="breadcrumb-siblings">Events</a>
                                     </li>
                                   </ul>
                                   <input
@@ -490,7 +490,7 @@
                               </div>
 
 
-                              <div class="sibblingLevels">
+                              <div class="sibblingLevels" id="breadcrumb-siblings">
 
 
                                 <ul>
@@ -527,8 +527,8 @@
                           <h2 id="nav-country" class="visually-hidden">Country Navigation</h2>
                           <div class="sfContentBlock">
                             <div class="countrySwitch">
-                              <button><span>United Kingdom</span></button>
-                              <ul>
+                              <button aria-controls="nav-country-list"><span>United Kingdom</span></button>
+                              <ul id="nav-country-list">
                                 <li><a href="http://www.soprasteria.at"
                                   target="_blank">Austria</a></li>
                                 <li><a href="http://www.soprasteria.be"
@@ -574,8 +574,8 @@
                                   target="_blank">Sopra HR Software</a></li>
                                 <li><a href="http://www.soprasteria.com"
                                   target="_blank">Sopra Steria</a></li>
-                                <li><a href="#" class="close_country"><img alt="Close country list"
-                                  src="./public/images/close_country.png"/></a></li>
+                                <li><a href="#" class="close_country" role="button" aria-controls="nav-country-list"><img alt="Close country list"
+                                  src="../../public/images/close_country.png"/></a></li>
                               </ul>
                             </div>
                           </div>
