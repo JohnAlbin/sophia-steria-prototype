@@ -842,7 +842,7 @@
     background: #f6f8f8;
   }
 
-  .table._docs tr:hover {
+  .table._docs ._details:hover {
     background: #e8eded;
   }
 
@@ -861,7 +861,7 @@
     width: 1.85em;
   }
 
-  .table._docs td._details {
+  .table._docs ._details {
     padding-left: 45px;
   }
 

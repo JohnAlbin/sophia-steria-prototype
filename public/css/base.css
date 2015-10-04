@@ -3419,10 +3419,6 @@ td._blank {
   border: none;
 }
 
-.table._docs {
-  margin: 0;
-}
-
 .table._docs h3,
 .table._docs ._h3 {
   color: #1d2b38;
@@ -3436,7 +3432,7 @@ td._blank {
   margin: 0;
 }
 
-.table._docs tbody td {
+.table._docs {
   font-size: 13px;
   font-size: 0.8125rem;
 }
