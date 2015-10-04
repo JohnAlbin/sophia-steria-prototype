@@ -409,7 +409,7 @@ a.btn,
 span.btn,
 .btn > a,
 .btn > span {
-  background: #9eaeb4;
+  background: #666;
   color: #fff;
   display: block;
   display: inline-block;
@@ -417,13 +417,14 @@ span.btn,
   padding: 0.6em 1.1em 0.6em;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 ._gray a.btn,
 ._gray span.btn,
 ._gray .btn > a,
 ._gray .btn > span {
-  background: #9eaeb4;
+  background: #666;
 }
 
 a.btn small,

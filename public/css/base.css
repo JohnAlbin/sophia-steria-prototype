@@ -2705,7 +2705,8 @@ button.btn:hover span,
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.brick._blue {
+.brick._blue,
+.brick._blue h2 {
   background-color: #41738c;
   color: #fff;
 }
@@ -2750,6 +2751,7 @@ button.btn:hover span,
   background-color: #c7001b;
 }
 
+.brick._red,
 .brick._red h1,
 .brick._red h2,
 .brick._red h3,
